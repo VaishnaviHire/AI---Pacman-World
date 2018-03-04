@@ -1,0 +1,23 @@
+
+Name: Vaishnavi Hire
+Time Spent on HW1: 16 hrs
+
+Heuristic Values:
+
+Q6) Corners Problem:
+
+=> The heuristic value for this problem is the summation of the shortest manhattan distances from current position to non-visited corners.
+   The current position gets updated to the corner being visited.
+   Time Complexity to calculate heuristic : O(1)
+   The heuristic is admissible and consistent for all the test cases.
+   Nodes Expanded in mediumCorners using this heuristic : 694
+   total cost : 106
+   Time: 0.3 secs
+
+Q7) Food Search Problem
+
+=> The heuristic value for this problem is the maximum maze distance from position to any food in foodGrid.As this value is always less than   equal to the actual cost, the heuristic is admissible and consistent.
+   Time Complexity to calculate heuristic : O(n) where n is the number of food dots in the grid.
+   Nodes Expanded in trickySearch using this heuristic : 4137
+   Total cost: 60
+   Time: 46.4 secs

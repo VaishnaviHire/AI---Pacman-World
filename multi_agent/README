@@ -1,0 +1,29 @@
+Number of hours spent: 10 hrs
+
+q1) Evaluation function depends upon following factors:
+    - new position of ghost and the pacman
+    - position of food in current food grid
+    - Timer value of ghosts
+
+    1.If the new position of ghost and pacman is same it is given a score of -inf
+    2.If the timer for ghost is non zero, then pacman needs to go near it, hence value of 2.0 is added to the score
+    3.Pacman needs to go in the direction of nearest food in current grid, hence a value of 1/ min(distance of food in food-grid from pacman position) is added to the score.
+    
+
+
+q5) A better evaluation function depends upon:
+
+    - position of the food Capsule
+    - score of the pacman at current game state
+    - number of scared ghosts
+    - position of ghost and the pacman
+    - position of food in current food grid
+    - Timer value of ghosts
+
+    1.If the new position of ghost and pacman is same it is given a score of -inf
+    2.If the timer for ghost is non zero, then pacman needs to go near it, hence value of 2.0 is added to the score
+    3.Pacman needs to go in the direction of nearest food in current grid, hence a value of 1/ min(distance of food in food-grid from pacman  position) is added to the score.
+    4.The pacman needs to go as far from ghosts as possible, hence a value of -5.0 * (1/ min( distance between pacman and ghost) is added to final score.
+    5.The pacman needs to go in the direction of capsule, hence a value of 1/min(distance between capsule and pacman) is added to the score
+    6.More the number of scared ghosts more the chances of pacman to score, hence the number of scared ghosts is added to final score
+    7.Finally, the score of the current game state is also added to evaluation function.
